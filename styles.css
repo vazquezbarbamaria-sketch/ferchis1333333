@@ -1,0 +1,134 @@
+h1{
+ color: rgb(231, 161, 216);
+}
+h2{
+    color: rgb(160, 95, 125); 
+}  
+h3{ 
+     color: rgb(187, 101, 173); 
+ }   
+p{
+
+      color: rgb(0, 0, 0); 
+ }
+
+     /*general*/
+     body{ 
+        font-family:Arial, Helvetica, sans-serif;/*fuente de toda la pagina*/
+        margin:0;/*margenes*/
+        padding:0;/*quitar relleno*/
+        background-color: rgb(0, 0, 0);/*color de fondo giral*/
+        color: black;/*color del texto*/
+    }
+
+    /*encabezado*/
+    header{  
+    text-align: center;/*centrar el texto*/
+    background-color: rgb(219, 196, 230);
+    color: rgb(240, 193, 253);
+padding: 20px;
+font-size: 28px;/*tamaño del texto */
+text-shadow: 2px  2px 5px #000000;/*sombra del texto para dar relieve*/
+}
+
+/*menu de navegacion*/
+nav{
+  display: flex;/*organizar el contenido*/
+  justify-content: space-between;/*espacio los elementos*/
+  align-items: center;/*alinia verticalmente*/
+  background-color: rgb(180, 107, 164);
+padding: 10px ;
+}
+nav ul{
+list-style: none;/*quitar viñetas*/
+margin: 0;
+padding: 0;
+display: flex;
+gap: 20px;/*cada elemento se muestra en una linea*/
+}
+
+nav ul li a{
+display: inline;/*cada elemento se muestra en una linea*/
+}
+ nav ul li a {
+
+text-decoration: none;/*quitar el subrayado*/
+color: rgb(160, 95, 154);
+font-weight: bold;/*texto en negritas*/
+transition: color 0.3s;
+ }
+nav ul li a hover {
+color: rgb(160, 95, 151);/*cambie de color al pasar al curso*/
+}
+nav form{
+  display: flex;
+  gap:5px;
+}
+nav imput[typ="search"]{
+padding: 5px;
+border:none;/*borde none es sin bordes*/
+border-radius: 5px;/*borde redondeado*/
+}
+nav imput[type="sumbit"]{
+   background-color: rgb(3, 12, 12);
+color: rgb(160, 95, 138);
+border: none;
+border: radius 5px;
+padding: 5px 10 px;
+cursor: pointer;/*cambiar curso al ´pasar*/
+}
+ nav imput[type="submit"]:hover{
+ background-color: #000000;
+ }
+
+/*contenido principal*/
+main{
+
+    display: flex;
+    margin: 20;
+    gap: 20px;
+
+}
+article{
+flex:3;/*ocupa tres veces el espacio*/
+background-color: rgb(235, 204, 223);
+padding: 20px;
+border: 1pxn solid rgb(179, 89, 197);/*borde gris claro*/
+border-radius: 8px;/*borde redondeado*/
+}
+article h2{
+text-align: center;
+font-size:24px;
+color: rgb(192, 124, 162);
+}
+article h3 {
+color: aliceblue;
+margin-top: 15px;/*espacio de arriba*/
+}
+/*barra lateral "RELACION"*/
+aside{
+flex:1;
+background-color: rgb(231, 165, 204);
+padding: 20px;
+border-radius: 8px;
+}
+aside h2 {
+    color: #000000;
+}
+aside ul {
+list-style-type: disc;/*viñetas circulares*/
+padding-left: 20px;
+}
+aside ul li a {
+text-decoration: none;
+color: blue;
+}
+/*pie de pagina*/
+footer{
+    background-color: #000000;
+    color: beige;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
